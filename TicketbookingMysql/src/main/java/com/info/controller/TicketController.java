@@ -40,8 +40,7 @@ public class TicketController {
 	}
 	@PutMapping("/ticket/{ticketId}/{updatedEmail:.+}")
 	public TicketEntity updateTicket(@PathVariable("ticketId") Integer ticketId,@PathVariable("updatedEmail")String updatedEmail ) {
-		return tService.updateTicket(ticketId,updatedEmail);
-		
+		return tService.updateTicket(ticketId,updatedEmail);	
 	}
 
 }
