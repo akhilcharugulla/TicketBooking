@@ -42,5 +42,4 @@ public class TicketController {
 	public TicketEntity updateTicket(@PathVariable("ticketId") Integer ticketId,@PathVariable("updatedEmail")String updatedEmail ) {
 		return tService.updateTicket(ticketId,updatedEmail);	
 	}
-
 }
